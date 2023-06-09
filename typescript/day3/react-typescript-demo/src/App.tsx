@@ -1,4 +1,6 @@
 import "./App.css";
+import { Counter } from "./components/class/Counter";
+import { User } from "./components/context/User";
 import { Button } from "./components/Props/Button";
 import { Container } from "./components/Props/Container";
 import { Greet } from "./components/Props/Greet";
@@ -8,6 +10,11 @@ import { Oscar } from "./components/Props/Oscar";
 import { Person } from "./components/Props/Person";
 import { PersonList } from "./components/Props/PersonList";
 import { Status } from "./components/Props/Status";
+import { Box } from "./components/context/Box";
+import { ThemeContextProvider } from "./components/context/ThemeContext";
+import { UserContextProvider } from "./components/context/UserContext";
+import { DomRef } from "./components/Hooks/ref/DomRef";
+import { MutableRef } from "./components/Hooks/ref/MutableRef";
 
 function App() {
   const personName = {
@@ -69,6 +76,31 @@ function App() {
           textDecoration: "underline",
         }}
       /> */}
+
+      {/* Hooks */}
+      {/* useState */}
+      {/* <User /> */}
+      {/* useReducer */}
+      {/*  <Counter /> */}
+
+      {/* Context Api */}
+
+      {/* <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider> */}
+
+      {/* <UserContextProvider>
+        <User />
+      </UserContextProvider> */}
+
+      {/* UseRef */}
+
+      {/* <DomRef /> */}
+      {/* <MutableRef /> */}
+
+      {/* Class */}
+
+      <Counter message="The Count value is" />
     </div>
   );
 }
